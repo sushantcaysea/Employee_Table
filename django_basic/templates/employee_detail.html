@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/cards.css' %}">
+    <title>Employee Card</title>
+</head>
+
+<body>
+
+    <div class="employee-card">
+        <img src="{{employee.photo.url}}" alt="Employee Photo">
+
+        <div class="details">
+            <h2>{{employee.first_name}}{{employee.last_name}}</h2>
+            <p><strong>Email:</strong> {{employee.email_address}}</p>
+            <p><strong>Position:</strong>{{employee.position}}</p>
+
+            <a href="{% url 'home' %}" class="home-btn">Back to Home</a>
+        </div>
+    </div>
+
+</body>
+</html>
