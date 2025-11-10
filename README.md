@@ -1,2 +1,2 @@
 # Employee_Table
-Python with Django to fetch data in UI from database
+Javascripts,Python with Django to fetch data in UI from database,
